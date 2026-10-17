@@ -26,9 +26,7 @@ export default function Footer({ navigateToPage, currentLang }) {
                 ? 'ಕರ್ನಾಟಕದ ಪ್ರಮುಖ ಪ್ರಮಾಣೀಕೃತ ಅಡಿಕೆ ಸಸಿಗಳ ನರ್ಸರಿ. 25+ ವರ್ಷಗಳ ಮಾನ್ಯತೆ ಪಡೆದ ತಾಯಿ ಮರಗಳಿಂದ ಮೋಹಿತ್‌ನಗರ, ಮಂಗಳ, ಸುಮಂಗಳ ಮತ್ತು ಶ್ರೀಮಂಗಳ ತಳಿಗಳ ಸಸಿಗಳ ಪೂರೈಕೆ.'
                 : 'India’s premier certified Arecanut plant nursery. Specializing in Mohitnagar, Mangala, Sumangala, and hybrid seed selection from 25+ year elite mother palms.'}
             </p>
-            <div className="f-accreditation">
-              <span>Govt. Reg. License No: KAE-2001-NUR-884</span>
-            </div>
+
           </div>
 
           {/* Quick Links */}
