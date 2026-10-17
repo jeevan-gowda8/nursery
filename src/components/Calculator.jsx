@@ -9,7 +9,7 @@ export default function Calculator({ navigateToPage, currentLang }) {
   const [intercrop, setIntercrop] = useState('pepper');
   const [yieldPerPalm, setYieldPerPalm] = useState(3.8);
   const [marketPrice, setMarketPrice] = useState(480);
-  const [selectedDistrict, setSelectedDistrict] = useState('shivamogga');
+  const [selectedDistrict, setSelectedDistrict] = useState('ramanagara');
 
   const t = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
 
@@ -43,13 +43,14 @@ export default function Calculator({ navigateToPage, currentLang }) {
   };
 
   const districts = [
-    { id: 'dakshina-kannada', name: currentLang === 'kn' ? 'ದಕ್ಷಿಣ ಕನ್ನಡ / ಉಡುಪಿ' : 'Dakshina Kannada / Udupi', transitDays: 'Same Day Dispatch' },
-    { id: 'shivamogga', name: currentLang === 'kn' ? 'ಶಿವಮೊಗ್ಗ / ತೀರ್ಥಹಳ್ಳಿ' : 'Shivamogga / Thirthahalli', transitDays: '1 Day Delivery' },
-    { id: 'chikkamagaluru', name: currentLang === 'kn' ? 'ಚಿಕ್ಕಮಗಳೂರು / ಮೂಡಿಗೆರೆ' : 'Chikkamagaluru / Mudigere', transitDays: '1 Day Delivery' },
-    { id: 'uttara-kannada', name: currentLang === 'kn' ? 'ಉತ್ತರ ಕನ್ನಡ (ಶಿರಸಿ/ಸಿದ್ಧಾಪುರ)' : 'Uttara Kannada (Sirsi/Siddapur)', transitDays: '1 Day Delivery' },
-    { id: 'hassan', name: currentLang === 'kn' ? 'ಹಾಸನ / ಸಕಲೇಶಪುರ' : 'Hassan / Sakleshpur', transitDays: '1-2 Days Delivery' },
-    { id: 'tumakuru', name: currentLang === 'kn' ? 'ತುಮಕೂರು / ಚಿತ್ರದುರ್ಗ' : 'Tumakuru / Chitradurga', transitDays: '1-2 Days Delivery' },
-    { id: 'davanagere', name: currentLang === 'kn' ? 'ದಾವಣಗೆರೆ / ಹಾವೇರಿ' : 'Davanagere / Haveri', transitDays: '2 Days Delivery' }
+    { id: 'ramanagara', name: currentLang === 'kn' ? 'ರಾಮನಗರ / ಮಾಗಡಿ / ಚನ್ನಪಟ್ಟಣ' : 'Ramanagara / Magadi / Channapatna', transitDays: 'Same Day Dispatch' },
+    { id: 'bengaluru', name: currentLang === 'kn' ? 'ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ / ನೆಲಮಂಗಲ' : 'Bengaluru Rural / Nelamangala', transitDays: 'Same Day Dispatch' },
+    { id: 'tumakuru', name: currentLang === 'kn' ? 'ತುಮಕೂರು / ಕುಣಿಗಲ್ / ತಿಪಟೂರು' : 'Tumakuru / Kunigal / Tiptur', transitDays: 'Same Day / 1 Day' },
+    { id: 'mandya', name: currentLang === 'kn' ? 'ಮಂಡ್ಯ / ಮದ್ದೂರು / ಮಳವಳ್ಳಿ' : 'Mandya / Maddur / Malavalli', transitDays: '1 Day Delivery' },
+    { id: 'hassan', name: currentLang === 'kn' ? 'ಹಾಸನ / ಚನ್ನರಾಯಪಟ್ಟಣ' : 'Hassan / Channarayapatna', transitDays: '1 Day Delivery' },
+    { id: 'shivamogga', name: currentLang === 'kn' ? 'ಶಿವಮೊಗ್ಗ / ತೀರ್ಥಹಳ್ಳಿ' : 'Shivamogga / Thirthahalli', transitDays: '1-2 Days Delivery' },
+    { id: 'chikkamagaluru', name: currentLang === 'kn' ? 'ಚಿಕ್ಕಮಗಳೂರು / ಮೂಡಿಗೆರೆ' : 'Chikkamagaluru / Mudigere', transitDays: '1-2 Days Delivery' },
+    { id: 'davanagere', name: currentLang === 'kn' ? 'ದಾವಣಗೆರೆ / ಚಿತ್ರದುರ್ಗ' : 'Davanagere / Chitradurga', transitDays: '2 Days Delivery' }
   ];
 
   // Mathematical Calculations
@@ -261,7 +262,7 @@ export default function Calculator({ navigateToPage, currentLang }) {
               </button>
 
               <a
-                href={`https://wa.me/919876543210?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20used%20your%20calculator%20for%20${acres}%20Acres%20(${totalSaplings}%20saplings%20for%20${selectedDistrict}).%20Please%20send%20bulk%20quote%20and%20truck%20delivery%20details.`}
+                href={`https://wa.me/916362324998?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20used%20your%20calculator%20for%20${acres}%20Acres%20(${totalSaplings}%20saplings%20for%20${selectedDistrict}).%20Please%20send%20bulk%20quote%20and%20truck%20delivery%20details.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline w-full"

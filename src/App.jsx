@@ -6,63 +6,23 @@ import Calculator from './components/Calculator';
 import About from './components/About';
 import Gallery from './components/Gallery';
 import CareGuide from './components/CareGuide';
-import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import QuoteBasketModal from './components/QuoteBasketModal';
-import { Sprout, Calculator as CalcIcon, ShieldCheck, Image, BookOpen, Users, ArrowRight, MessageSquare } from 'lucide-react';
+import Chatbot from './components/Chatbot';
+import { Sprout, Calculator as CalcIcon, ShieldCheck, Image, BookOpen, ArrowRight, MessageSquare } from 'lucide-react';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('home');
   const [currentLang, setCurrentLang] = useState('en'); // 'en' or 'kn'
-  const [basket, setBasket] = useState([]);
-  const [isBasketOpen, setIsBasketOpen] = useState(false);
-
   const navigateToPage = (pageId) => {
     setCurrentPage(pageId);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const addToBasket = (newItem) => {
-    setBasket((prevBasket) => {
-      const existingIdx = prevBasket.findIndex(
-        (item) => item.id === newItem.id && item.stage === newItem.stage
-      );
-      if (existingIdx > -1) {
-        const updated = [...prevBasket];
-        const newQty = updated[existingIdx].quantity + newItem.quantity;
-        updated[existingIdx].quantity = newQty;
-        updated[existingIdx].totalPrice = newQty * updated[existingIdx].unitPrice;
-        return updated;
-      }
-      return [...prevBasket, newItem];
-    });
-  };
-
-  const removeFromBasket = (index) => {
-    setBasket((prev) => prev.filter((_, idx) => idx !== index));
-  };
-
-  const updateBasketQty = (index, newQty) => {
-    const validQty = Math.max(10, newQty || 10);
-    setBasket((prev) => {
-      const updated = [...prev];
-      updated[index].quantity = validQty;
-      updated[index].totalPrice = validQty * updated[index].unitPrice;
-      return updated;
-    });
-  };
-
-  const clearBasket = () => {
-    setBasket([]);
-  };
-
-  const totalBasketCount = basket.reduce((acc, item) => acc + item.quantity, 0);
-
   const renderPageContent = () => {
     switch (currentPage) {
       case 'products':
-        return <Products currentLang={currentLang} addToBasket={addToBasket} />;
+        return <Products currentLang={currentLang} />;
       case 'calculator':
         return <Calculator navigateToPage={navigateToPage} currentLang={currentLang} />;
       case 'about':
@@ -71,8 +31,6 @@ export default function App() {
         return <Gallery currentLang={currentLang} />;
       case 'care-guide':
         return <CareGuide currentLang={currentLang} />;
-      case 'testimonials':
-        return <Testimonials currentLang={currentLang} />;
       case 'contact':
         return <Contact currentLang={currentLang} />;
       case 'home':
@@ -164,19 +122,6 @@ export default function App() {
                     </p>
                     <span className="card-link">{currentLang === 'kn' ? 'ಮಾರ್ಗದರ್ಶಿ ಓದಿ' : 'Read Guide'} <ArrowRight size={15} /></span>
                   </div>
-
-                  <div className="home-card glass-card" onClick={() => navigateToPage('testimonials')}>
-                    <div className="card-icon-bg">
-                      <Users size={24} />
-                    </div>
-                    <h3>{currentLang === 'kn' ? 'ರೈತರ ಯಶೋಗಾಥೆಗಳು' : 'Farmer Success Stories'}</h3>
-                    <p>
-                      {currentLang === 'kn'
-                        ? 'ನಮ್ಮ ಸಸಿಗಳನ್ನು ನಾಟಿ ಮಾಡಿ ಉತ್ತಮ ಫಸಲು ಪಡೆದ ಪ್ರಗತಿಪರ ರೈತರ ನೈಜ ಅನಿಸಿಕೆಗಳು.'
-                        : 'Read verified reviews from progressive farmers who transformed their plantations with our saplings.'}
-                    </p>
-                    <span className="card-link">{currentLang === 'kn' ? 'ವಿಮರ್ಶೆಗಳನ್ನು ಓದಿ' : 'Read Reviews'} <ArrowRight size={15} /></span>
-                  </div>
                 </div>
               </div>
             </section>
@@ -193,8 +138,6 @@ export default function App() {
         navigateToPage={navigateToPage}
         currentLang={currentLang}
         setCurrentLang={setCurrentLang}
-        basketCount={totalBasketCount}
-        openBasket={() => setIsBasketOpen(true)}
       />
 
       {/* Main Dynamic View */}
@@ -208,21 +151,15 @@ export default function App() {
         currentLang={currentLang}
       />
 
-      {/* Slide-out Quotation Inquiry Drawer Modal */}
-      {isBasketOpen && (
-        <QuoteBasketModal
-          basket={basket}
-          closeBasket={() => setIsBasketOpen(false)}
-          removeFromBasket={removeFromBasket}
-          updateBasketQty={updateBasketQty}
-          clearBasket={clearBasket}
-          currentLang={currentLang}
-        />
-      )}
+      {/* Advanced AI Chatbot for Farmers */}
+      <Chatbot 
+        currentLang={currentLang} 
+        navigateToPage={navigateToPage} 
+      />
 
       {/* Floating Instant WhatsApp Button for Farmers */}
       <a
-        href="https://wa.me/919876543210?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20inquire%20about%20Arecanut%20saplings."
+        href="https://wa.me/916362324998?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20inquire%20about%20Arecanut%20saplings."
         target="_blank"
         rel="noopener noreferrer"
         className="floating-whatsapp-btn"
@@ -329,7 +266,7 @@ export default function App() {
         /* Floating WhatsApp Button */
         .floating-whatsapp-btn {
           position: fixed;
-          bottom: 24px;
+          bottom: 92px;
           right: 24px;
           z-index: 1500;
           background: #25d366;
@@ -358,8 +295,8 @@ export default function App() {
           }
           .floating-whatsapp-btn {
             padding: 12px;
-            bottom: 18px;
-            right: 18px;
+            bottom: 84px;
+            right: 16px;
           }
         }
       `}</style>

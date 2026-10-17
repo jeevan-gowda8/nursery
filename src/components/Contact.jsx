@@ -36,8 +36,8 @@ export default function Contact({ currentLang }) {
           </h2>
           <p className="section-subtitle">
             {currentLang === 'kn'
-              ? 'ಸುಳ್ಯದಲ್ಲಿರುವ ನಮ್ಮ 25 ಎಕರೆ ನರ್ಸರಿಗೆ ಖುದ್ದಾಗಿ ಭೇಟಿ ನೀಡಿ ಅಥವಾ ನಿಮ್ಮ ತೋಟಕ್ಕೆ ವಾಹನ ಸಾಗಾಟದ ಸಮಗ್ರ ದರಪಟ್ಟಿ ಪಡೆಯಿರಿ.'
-              : 'Visit our 25-acre nursery blocks in person or request an instant bulk transport quote directly to your farm location.'}
+              ? 'ರಾಮನಗರ ಜಿಲ್ಲೆಯ ಮಾಗಡಿ ತಾಲೂಕಿನ ತಿಪ್ಪಸಂದ್ರದಲ್ಲಿರುವ ನಮ್ಮ ನರ್ಸರಿಗೆ ಖುದ್ದಾಗಿ ಭೇಟಿ ನೀಡಿ ಅಥವಾ ನಿಮ್ಮ ತೋಟಕ್ಕೆ ವಾಹನ ಸಾಗಾಟದ ಸಮಗ್ರ ದರಪಟ್ಟಿ ಪಡೆಯಿರಿ.'
+              : 'Visit our nursery in Thippasandra, Magadi Taluk, Ramanagara District in person or request an instant bulk transport quote directly to your farm location.'}
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export default function Contact({ currentLang }) {
               </div>
               <div>
                 <strong>{t.brandName}</strong>
-                <p>NH-275 Highway Road, Near Agriculture Research Station, Sullia, Dakshina Kannada, Karnataka - 574239</p>
+                <p>Thippasandra, Magadi Taluk, Ramanagara District, Karnataka - 562131</p>
               </div>
             </div>
 
@@ -64,7 +64,7 @@ export default function Contact({ currentLang }) {
               </div>
               <div>
                 <strong>{currentLang === 'kn' ? 'ನೇರ ಕರೆ / ಸಹಾಯವಾಣಿ' : 'Direct Phone / Call'}</strong>
-                <p>+91 98765 43210 / +91 94481 12345</p>
+                <p>+91 63623 24998</p>
               </div>
             </div>
 
@@ -74,7 +74,7 @@ export default function Contact({ currentLang }) {
               </div>
               <div>
                 <strong>{currentLang === 'kn' ? 'ಇಮೇಲ್ ವಿಳಾಸ' : 'Email Support'}</strong>
-                <p>inquiry@sriarecanursery.com</p>
+                <p><a href="mailto:Shreyasshetty4693@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>Shreyasshetty4693@gmail.com</a></p>
               </div>
             </div>
 
@@ -93,7 +93,7 @@ export default function Contact({ currentLang }) {
               <h4>{currentLang === 'kn' ? 'ತಕ್ಷಣ ಸಸಿ ಲಭ್ಯತೆ ತಿಳಿಯಬೇಕೆ?' : 'Need Immediate Sapling Availability?'}</h4>
               <p>{currentLang === 'kn' ? 'ತಾಯಿ ಮರಗಳ ವೀಡಿಯೋ ತಪಾಸಣೆ ಮತ್ತು ದರಪಟ್ಟಿಗೆ ನಮ್ಮ ಹಿರಿಯ ತೋಟಗಾರಿಕಾ ತಜ್ಞರೊಂದಿಗೆ ನೇರವಾಗಿ ಚಾಟ್ ಮಾಡಿ.' : 'Chat directly with our senior horticulturist on WhatsApp for video inspection of mother palms.'}</p>
               <a
-                href="https://wa.me/919876543210?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20visit%20the%20nursery%20and%20order%20saplings."
+                href="https://wa.me/916362324998?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20visit%20the%20nursery%20and%20order%20saplings."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-gold w-full"
@@ -143,7 +143,7 @@ export default function Contact({ currentLang }) {
                     <input
                       type="tel"
                       required
-                      placeholder="e.g. 9876543210"
+                      placeholder="e.g. 6362324998"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     />
@@ -156,7 +156,7 @@ export default function Contact({ currentLang }) {
                     <input
                       type="text"
                       required
-                      placeholder={currentLang === 'kn' ? 'ಉದಾ. ಶಿವಮೊಗ್ಗ, ಕರ್ನಾಟಕ' : 'e.g. Shimoga, Karnataka'}
+                      placeholder={currentLang === 'kn' ? 'ಉದಾ. ಮಾಗಡಿ / ರಾಮನಗರ, ಕರ್ನಾಟಕ' : 'e.g. Magadi / Ramanagara, Karnataka'}
                       value={formData.location}
                       onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                     />

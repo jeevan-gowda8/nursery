@@ -32,8 +32,8 @@ export default function Gallery({ currentLang }) {
           </h2>
           <p className="section-subtitle">
             {currentLang === 'kn'
-              ? 'ಸುಳ್ಯದಲ್ಲಿರುವ ನಮ್ಮ 25 ಎಕರೆ ತಾಯಿ ಮರಗಳ ತೋಟ, ಪಾಲಿಬ್ಯಾಗ್ ಹಸಿರುಮನೆ ಮತ್ತು ಬಂಪರ್ ಗೊಂಚಲುಗಳ ಚಿತ್ರಗಳು.'
-              : 'Take a virtual tour of our 25-acre certified mother palm blocks, polybag nursery beds, and bumper harvest clusters.'}
+              ? 'ತಿಪ್ಪಸಂದ್ರದಲ್ಲಿರುವ ನಮ್ಮ 25 ಎಕರೆ ತಾಯಿ ಮರಗಳ ತೋಟ, ಪಾಲಿಬ್ಯಾಗ್ ಹಸಿರುಮನೆ ಮತ್ತು ಬಂಪರ್ ಗೊಂಚಲುಗಳ ಚಿತ್ರಗಳು.'
+              : 'Take a virtual tour of our 25-acre certified mother palm blocks, polybag nursery beds, and bumper harvest clusters in Thippasandra.'}
           </p>
 
           {/* Filter Tabs */}

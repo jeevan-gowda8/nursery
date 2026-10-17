@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { ARECANUT_VARIETIES, TRANSLATIONS } from '../data/nurseryData';
-import { Sprout, Check, Info, Plus, CheckCircle2, X, Table } from 'lucide-react';
+import { Sprout, Check, Info, X, Table, MessageSquare } from 'lucide-react';
 
-export default function Products({ currentLang, addToBasket }) {
+export default function Products({ currentLang }) {
   const [activeFilter, setActiveFilter] = useState('all');
   const [viewMode, setViewMode] = useState('cards'); // 'cards' or 'compare'
-  const [addedPopup, setAddedPopup] = useState(null);
 
   const t = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
 
@@ -61,26 +60,7 @@ export default function Products({ currentLang, addToBasket }) {
     twoYear: currentLang === 'kn' ? '2-ವರ್ಷದ ಸಿದ್ಧ ಸಸಿ' : '2-Year Ready Palm'
   };
 
-  const handleAddToBasket = (product) => {
-    const stage = selectedStages[product.id] || 'oneYear';
-    const unitPrice = product.prices[stage];
-    const qty = quantities[product.id] || 100;
-    const stageLabel = stageLabels[stage];
 
-    addToBasket({
-      id: product.id,
-      name: currentLang === 'kn' ? product.nameKn : product.name,
-      image: product.image,
-      stage,
-      stageLabel,
-      unitPrice,
-      quantity: qty,
-      totalPrice: unitPrice * qty
-    });
-
-    setAddedPopup(product.id);
-    setTimeout(() => setAddedPopup(null), 2200);
-  };
 
   const handleWhatsAppInquiry = (product) => {
     const stage = selectedStages[product.id] || 'oneYear';
@@ -93,7 +73,7 @@ export default function Products({ currentLang, addToBasket }) {
     const message = encodeURIComponent(
       `Hello Sri Areca Haven Nursery, I want to inquire about ordering ${qty} saplings of ${productName} (${stageName}) at ₹${unitPrice}/pc (Est Total: ₹${total.toLocaleString('en-IN')}). Please confirm delivery & booking.`
     );
-    window.open(`https://wa.me/919876543210?text=${message}`, '_blank');
+    window.open(`https://wa.me/916362324998?text=${message}`, '_blank');
   };
 
   return (
@@ -190,7 +170,6 @@ export default function Products({ currentLang, addToBasket }) {
               const unitPrice = product.prices[stageKey];
               const qty = quantities[product.id] || 100;
               const totalPrice = unitPrice * qty;
-              const isAdded = addedPopup === product.id;
 
               return (
                 <div key={product.id} className="product-card glass-card">
@@ -296,22 +275,14 @@ export default function Products({ currentLang, addToBasket }) {
                     </div>
 
                     {/* Action Buttons */}
-                    <div className="card-actions">
+                    <div className="card-actions" style={{ display: 'flex', gap: '8px', width: '100%' }}>
                       <button 
-                        onClick={() => handleAddToBasket(product)} 
-                        className={`btn ${isAdded ? 'btn-gold' : 'btn-primary'} card-add-btn`}
+                        onClick={() => handleWhatsAppInquiry(product)} 
+                        className="btn btn-primary card-add-btn"
+                        style={{ flex: 1 }}
                       >
-                        {isAdded ? (
-                          <>
-                            <CheckCircle2 size={17} />
-                            <span>{t.addedToBasket}</span>
-                          </>
-                        ) : (
-                          <>
-                            <Plus size={17} />
-                            <span>{t.addToQuote}</span>
-                          </>
-                        )}
+                        <MessageSquare size={17} />
+                        <span>{currentLang === 'kn' ? 'ವಿಚಾರಿಸಿ' : 'WhatsApp Inquiry'}</span>
                       </button>
                       
                       <button 

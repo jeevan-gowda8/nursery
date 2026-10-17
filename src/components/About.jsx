@@ -65,8 +65,8 @@ export default function About({ currentLang }) {
 
             <p className="about-text">
               {currentLang === 'kn'
-                ? '2001ರಲ್ಲಿ ದಕ್ಷಿಣ ಕನ್ನಡದ ಸುಳ್ಯ ತಾಲೂಕಿನಲ್ಲಿ ಸ್ಥಾಪನೆಯಾದ ಶ್ರೀ ಅಡಿಕೆ ಹ್ಯಾವನ್ ನರ್ಸರಿಯು, ರೈತರಿಗೆ ಕಲಬೆರಕೆ ಇಲ್ಲದ 100% ಶುದ್ಧ ತಾಯಿ ಗಿಡದ ಅಡಿಕೆ ಸಸಿಗಳನ್ನು ಪೂರೈಸುವ ಮಹತ್ವಾಕಾಂಕ್ಷೆಯೊಂದಿಗೆ ಮುನ್ನಡೆಯುತ್ತಿದೆ.'
-                : 'Founded in 2001 in Karnataka’s fertile coastal areca belt, Sri Areca Haven Nursery was established to eliminate rogue, low-yielding seedlings and guarantee farmers true-to-type, high-productivity Arecanut varieties.'}
+                ? '2001ರಲ್ಲಿ ರಾಮನಗರ ಜಿಲ್ಲೆಯ ಮಾಗಡಿ ತಾಲೂಕಿನ ತಿಪ್ಪಸಂದ್ರದಲ್ಲಿ ಸ್ಥಾಪನೆಯಾದ ಶ್ರೀ ಅಡಿಕೆ ಹ್ಯಾವನ್ ನರ್ಸರಿಯು, ರೈತರಿಗೆ ಕಲಬೆರಕೆ ಇಲ್ಲದ 100% ಶುದ್ಧ ತಾಯಿ ಗಿಡದ ಅಡಿಕೆ ಸಸಿಗಳನ್ನು ಪೂರೈಸುವ ಮಹತ್ವಾಕಾಂಕ್ಷೆಯೊಂದಿಗೆ ಮುನ್ನಡೆಯುತ್ತಿದೆ.'
+                : 'Founded in 2001 in Thippasandra, Magadi Taluk, Ramanagara District, Sri Areca Haven Nursery was established to eliminate rogue, low-yielding seedlings and guarantee farmers true-to-type, high-productivity Arecanut varieties.'}
             </p>
 
             <p className="about-text">

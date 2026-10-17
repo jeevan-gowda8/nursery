@@ -4,7 +4,7 @@ export const TRANSLATIONS = {
   en: {
     brandName: "Sri Areca Haven",
     brandTagline: "Govt. Accredited Elite Mother Palm Nursery",
-    brandLocation: "Sullia, Dakshina Kannada, Karnataka",
+    brandLocation: "Thippasandra, Magadi Taluk, Ramanagara District, Karnataka - 562131",
     navHome: "Home",
     navProducts: "Areca Varieties",
     navCalculator: "Profit Calculator",
@@ -58,7 +58,7 @@ export const TRANSLATIONS = {
   kn: {
     brandName: "ಶ್ರೀ ಅಡಿಕೆ ಹ್ಯಾವನ್ ನರ್ಸರಿ",
     brandTagline: "ಸರ್ಕಾರ ಮಾನ್ಯತೆ ಪಡೆದ ಉತ್ತಮ ತಾಯಿ ಗಿಡಗಳ ನರ್ಸರಿ",
-    brandLocation: "ಸುಳ್ಯ, ದಕ್ಷಿಣ ಕನ್ನಡ, ಕರ್ನಾಟಕ",
+    brandLocation: "ತಿಪ್ಪಸಂದ್ರ, ಮಾಗಡಿ ತಾಲೂಕು, ರಾಮನಗರ ಜಿಲ್ಲೆ, ಕರ್ನಾಟಕ - 562131",
     navHome: "ಮುಖಪುಟ",
     navProducts: "ಅಡಿಕೆ ತಳಿಗಳು",
     navCalculator: "ಲಾಭದ ಕ್ಯಾಲ್ಕುಲೇಟರ್",
@@ -416,8 +416,8 @@ export const TESTIMONIALS = [
     id: 1,
     name: "Subrahmanya Bhat",
     nameKn: "ಸುಬ್ರಹ್ಮಣ್ಯ ಭಟ್",
-    location: "Sullia, Dakshina Kannada",
-    locationKn: "ಸುಳ್ಯ, ದಕ್ಷಿಣ ಕನ್ನಡ",
+    location: "Thippasandra, Ramanagara",
+    locationKn: "ತಿಪ್ಪಸಂದ್ರ, ರಾಮನಗರ",
     acreage: "8 Acres",
     varietyBought: "Mohitnagar & Mangala (1,800 Saplings)",
     rating: 5,
@@ -442,8 +442,8 @@ export const TESTIMONIALS = [
     id: 3,
     name: "Dr. Anantha Murthy",
     nameKn: "ಡಾ. ಅನಂತಮೂರ್ತಿ",
-    location: "Tumakuru, Karnataka",
-    locationKn: "ತುಮಕೂರು, ಕರ್ನಾಟಕ",
+    location: "Magadi, Ramanagara",
+    locationKn: "ಮಾಗಡಿ, ರಾಮನಗರ",
     acreage: "12 Acres",
     varietyBought: "Sumangala & Srimangala (2,500 Saplings)",
     rating: 5,
@@ -510,8 +510,8 @@ export const FAQS = [
   {
     question: "How do I know the saplings are from genuine certified mother palms?",
     questionKn: "ಸಸಿಗಳು ಅಧಿಕ ಇಳುವರಿಯ ಅಪ್ಪಟ ತಾಯಿ ಗಿಡಗಳಿಂದಲೇ ಬಂದಿವೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳುವುದು ಹೇಗೆ?",
-    answer: "Every single seed nut at Sri Areca Haven Nursery is harvested exclusively from our 25+ year old certified elite mother palm blocks. We invite farmers to visit our nursery in Sullia and inspect the benchmark mother palms in person!",
-    answerKn: "ಶ್ರೀ ಅಡಿಕೆ ನರ್ಸರಿಯಲ್ಲಿ ಪ್ರತಿ ಬೀಜದ ಅಡಿಕೆಯನ್ನು ನಮ್ಮದೇ 25+ ವರ್ಷಗಳ ಮಾನ್ಯತೆ ಪಡೆದ ತಾಯಿ ಮರಗಳಿಂದ ಆರಿಸಲಾಗುತ್ತದೆ. ರೈತರು ಸುಳ್ಯದಲ್ಲಿರುವ ನಮ್ಮ ನರ್ಸರಿಗೆ ಖುದ್ದಾಗಿ ಭೇಟಿ ನೀಡಿ ತಾಯಿ ಮರಗಳನ್ನು ಪರಿಶೀಲಿಸಬಹುದು!"
+    answer: "Every single seed nut at Sri Areca Haven Nursery is harvested exclusively from our 25+ year old certified elite mother palm blocks. We invite farmers to visit our nursery in Thippasandra, Magadi Taluk, Ramanagara District and inspect the benchmark mother palms in person!",
+    answerKn: "ಶ್ರೀ ಅಡಿಕೆ ನರ್ಸರಿಯಲ್ಲಿ ಪ್ರತಿ ಬೀಜದ ಅಡಿಕೆಯನ್ನು ನಮ್ಮದೇ 25+ ವರ್ಷಗಳ ಮಾನ್ಯತೆ ಪಡೆದ ತಾಯಿ ಮರಗಳಿಂದ ಆರಿಸಲಾಗುತ್ತದೆ. ರೈತರು ರಾಮನಗರ ಜಿಲ್ಲೆಯ ಮಾಗಡಿ ತಾಲೂಕಿನ ತಿಪ್ಪಸಂದ್ರದಲ್ಲಿರುವ ನಮ್ಮ ನರ್ಸರಿಗೆ ಖುದ್ದಾಗಿ ಭೇಟಿ ನೀಡಿ ತಾಯಿ ಮರಗಳನ್ನು ಪರಿಶೀಲಿಸಬಹುದು!"
   },
   {
     question: "What is the recommended plant spacing and how many saplings per acre?",
@@ -522,8 +522,8 @@ export const FAQS = [
   {
     question: "Do you ship saplings across Karnataka and all districts?",
     questionKn: "ಕರ್ನಾಟಕದ ಎಲ್ಲಾ ಜಿಲ್ಲೆಗಳಿಗೂ ಸಸಿಗಳನ್ನು ಸುರಕ್ಷಿತವಾಗಿ ತಲುಪಿಸುತ್ತೀರಾ?",
-    answer: "Yes! We provide safe transportation in specialized ventilated trucks and crates across Dakshina Kannada, Udupi, Shivamogga, Chikkamagaluru, Uttara Kannada, Hassan, Tumakuru, Davanagere, Chitradurga, Belagavi, and all other districts with zero root damage guarantee.",
-    answerKn: "ಹೌದು! ದಕ್ಷಿಣ ಕನ್ನಡ, ಉಡುಪಿ, ಶಿವಮೊಗ್ಗ, ಚಿಕ್ಕಮಗಳೂರು, ಉತ್ತರ ಕನ್ನಡ, ಹಾಸನ, ತುಮಕೂರು, ದಾವಣಗೆರೆ, ಚಿತ್ರದುರ್ಗ, ಬೆಳಗಾವಿ ಸೇರಿದಂತೆ ಎಲ್ಲಾ ಜಿಲ್ಲೆಗಳಿಗೂ ಸಸಿ ಮುರಿಯದಂತೆ ಕ್ರೇಟ್ ವಾಹನಗಳಲ್ಲಿ ನೇರವಾಗಿ ತೋಟಕ್ಕೆ ತಲುಪಿಸುತ್ತೇವೆ."
+    answer: "Yes! We provide safe transportation in specialized ventilated trucks and crates across Ramanagara, Bengaluru Rural, Tumakuru, Mandya, Hassan, Shivamogga, Chikkamagaluru, Davanagere, Chitradurga, Belagavi, and all other districts with zero root damage guarantee.",
+    answerKn: "ಹೌದು! ರಾಮನಗರ, ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ, ತುಮಕೂರು, ಮಂಡ್ಯ, ಹಾಸನ, ಶಿವಮೊಗ್ಗ, ಚಿಕ್ಕಮಗಳೂರು, ದಾವಣಗೆರೆ, ಚಿತ್ರದುರ್ಗ, ಬೆಳಗಾವಿ ಸೇರಿದಂತೆ ಎಲ್ಲಾ ಜಿಲ್ಲೆಗಳಿಗೂ ಸಸಿ ಮುರಿಯದಂತೆ ಕ್ರೇಟ್ ವಾಹನಗಳಲ್ಲಿ ನೇರವಾಗಿ ತೋಟಕ್ಕೆ ತಲುಪಿಸುತ್ತೇವೆ."
   },
   {
     question: "Which variety gives the highest dry nut (Chali) recovery?",

@@ -41,7 +41,6 @@ export default function Footer({ navigateToPage, currentLang }) {
               <li><button onClick={() => navigateToPage('about')}>{t.navAbout}</button></li>
               <li><button onClick={() => navigateToPage('gallery')}>{t.navGallery}</button></li>
               <li><button onClick={() => navigateToPage('care-guide')}>{t.navCareGuide}</button></li>
-              <li><button onClick={() => navigateToPage('testimonials')}>{t.navTestimonials}</button></li>
               <li><button onClick={() => navigateToPage('contact')}>{t.navContact}</button></li>
             </ul>
           </div>
@@ -64,15 +63,15 @@ export default function Footer({ navigateToPage, currentLang }) {
             <h4 className="f-col-title">{currentLang === 'kn' ? 'ನರ್ಸರಿ ಕಾರ್ಯಾಲಯ' : 'Nursery Office'}</h4>
             <div className="f-contact-item">
               <MapPin size={15} className="text-green" />
-              <span>Sullia, Dakshina Kannada, Karnataka - 574239</span>
+              <span>Thippasandra, Magadi Taluk, Ramanagara District, Karnataka - 562131</span>
             </div>
             <div className="f-contact-item">
               <Phone size={15} className="text-green" />
-              <span>+91 98765 43210</span>
+              <span>+91 63623 24998</span>
             </div>
             <div className="f-contact-item">
               <Mail size={15} className="text-green" />
-              <span>inquiry@sriarecanursery.com</span>
+              <a href="mailto:Shreyasshetty4693@gmail.com" style={{ color: 'inherit', textDecoration: 'none' }}>Shreyasshetty4693@gmail.com</a>
             </div>
             
             <button onClick={scrollToTop} className="btn btn-outline back-to-top-btn" style={{ marginTop: '14px' }}>

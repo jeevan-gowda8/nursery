@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Sprout, Menu, X, MessageSquare, ShoppingBag, Globe } from 'lucide-react';
+import { Sprout, Menu, X, MessageSquare, Globe } from 'lucide-react';
 import { TRANSLATIONS } from '../data/nurseryData';
 
-export default function Header({ currentPage, navigateToPage, currentLang, setCurrentLang, basketCount, openBasket }) {
+export default function Header({ currentPage, navigateToPage, currentLang, setCurrentLang }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const t = TRANSLATIONS[currentLang] || TRANSLATIONS.en;
@@ -20,7 +20,6 @@ export default function Header({ currentPage, navigateToPage, currentLang, setCu
     { id: 'about', label: t.navAbout },
     { id: 'gallery', label: t.navGallery },
     { id: 'care-guide', label: t.navCareGuide },
-    { id: 'testimonials', label: t.navTestimonials },
     { id: 'contact', label: t.navContact },
   ];
 
@@ -72,20 +71,11 @@ export default function Header({ currentPage, navigateToPage, currentLang, setCu
             <span className="lang-text">{currentLang === 'en' ? 'ಕನ್ನಡ' : 'English'}</span>
           </button>
 
-          {/* Quotation Inquiry Basket Button */}
-          <button 
-            onClick={openBasket} 
-            className={`basket-btn ${basketCount > 0 ? 'has-items' : ''}`}
-            title="View Quote Inquiry Basket"
-          >
-            <ShoppingBag size={18} />
-            <span className="basket-text">{t.quoteBasket}</span>
-            {basketCount > 0 && <span className="basket-badge">{basketCount}</span>}
-          </button>
+
 
           {/* Direct WhatsApp Call Button */}
           <a
-            href="https://wa.me/919876543210?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20inquire%20about%20high-yield%20Arecanut%20saplings."
+            href="https://wa.me/916362324998?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20inquire%20about%20high-yield%20Arecanut%20saplings."
             target="_blank"
             rel="noopener noreferrer"
             className="header-whatsapp-btn btn btn-primary"
@@ -120,13 +110,8 @@ export default function Header({ currentPage, navigateToPage, currentLang, setCu
             ))}
             
             <div className="mobile-drawer-cta">
-              <button onClick={() => { openBasket(); setMobileMenuOpen(false); }} className="btn btn-outline w-full" style={{ width: '100%', marginBottom: '10px' }}>
-                <ShoppingBag size={18} />
-                <span>{t.quoteBasket} ({basketCount})</span>
-              </button>
-              
               <a
-                href="https://wa.me/919876543210?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20inquire%20about%20saplings."
+                href="https://wa.me/916362324998?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20inquire%20about%20saplings."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
