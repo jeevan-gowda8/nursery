@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Botanical Light Palette */
+  --primary-50: #f0fdf4;
+  --primary-100: #dcfce7;
+  --primary-200: #bbf7d0;
+  --primary-500: #22c55e;
+  --primary-600: #16a34a;
+  --primary-700: #15803d;
+  --primary-800: #166534;
+  --primary-900: #14532d;
+  --primary-950: #052e16;
+
+  /* Harvest Amber & Gold */
+  --accent-gold: #f59e0b;
+  --accent-amber: #d97706;
+  --accent-amber-dark: #b45309;
+  --gold-glow: rgba(217, 119, 6, 0.18);
+  --gold-subtle: rgba(245, 158, 11, 0.12);
+
+  /* Light Theme Surfaces & Backgrounds */
+  --bg-page: #f8faf7;
+  --bg-surface: #ffffff;
+  --bg-surface-elevated: #f1f6f1;
+  --bg-surface-subtle: #fbfdfb;
+  --bg-card: #ffffff;
+  --bg-glass: rgba(255, 255, 255, 0.92);
+
+  /* Typography Colors */
+  --text-main: #132417;
+  --text-body: #2d3e31;
+  --text-muted: #4b6351;
+  --text-light: #718b77;
+
+  /* Realistic Borders & Dividers */
+  --border-color: #e2ede4;
+  --border-light: #edf4ee;
+  --border-active: #86efac;
+  --border-amber: #fde68a;
+
+  /* Organic Soft Shadows */
+  --shadow-xs: 0 1px 3px rgba(18, 48, 25, 0.05);
+  --shadow-sm: 0 2px 8px rgba(18, 48, 25, 0.06);
+  --shadow-md: 0 8px 24px rgba(18, 48, 25, 0.08);
+  --shadow-lg: 0 16px 36px rgba(18, 48, 25, 0.11);
+  --shadow-gold: 0 8px 25px rgba(217, 119, 6, 0.25);
+  --shadow-green: 0 8px 25px rgba(22, 128, 61, 0.22);
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', 'Noto Sans Kannada', sans-serif;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-page);
+  color: var(--text-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', 'Noto Sans Kannada', sans-serif;
+  color: var(--text-main);
+  line-height: 1.22;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+::-webkit-scrollbar-thumb {
+  background: #a7d7b0;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-700);
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 48px 0;
+  }
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  background: var(--primary-50);
+  color: var(--primary-800);
+  border: 1px solid var(--primary-200);
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  .badge {
+    padding: 5px 12px;
+    font-size: 0.75rem;
+  }
+}
+
+.badge-gold {
+  background: var(--gold-subtle);
+  color: var(--accent-amber-dark);
+  border-color: rgba(217, 119, 6, 0.25);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 26px;
+  border-radius: var(--radius-full);
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+  text-decoration: none;
+  user-select: none;
+  min-height: 44px;
+}
+
+@media (max-width: 500px) {
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-700), var(--primary-900));
+  color: #ffffff;
+  box-shadow: var(--shadow-green);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, var(--primary-800), var(--primary-950));
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(20, 83, 45, 0.35);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, var(--accent-gold), var(--accent-amber));
+  color: #ffffff;
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #fbbf24, var(--accent-amber-dark));
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(217, 119, 6, 0.38);
+}
+
+.btn-outline {
+  background: var(--bg-surface);
+  color: var(--text-main);
+  border: 1.5px solid var(--border-color);
+  box-shadow: var(--shadow-xs);
+}
+
+.btn-outline:hover {
+  border-color: var(--primary-700);
+  color: var(--primary-800);
+  background: var(--primary-50);
+  transform: translateY(-1px);
+}
+
+/* Realistic Glass Card */
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-smooth);
+}
+
+@media (max-width: 768px) {
+  .glass-card {
+    border-radius: var(--radius-md);
+  }
+}
+
+.glass-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-active);
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 48px auto;
+}
+
+@media (max-width: 768px) {
+  .section-header {
+    margin-bottom: 32px;
+  }
+}
+
+.section-title {
+  font-size: 2.35rem;
+  font-weight: 800;
+  margin: 14px 0 10px 0;
+  letter-spacing: -0.5px;
+  color: var(--text-main);
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.75rem;
+    letter-spacing: -0.3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.55rem;
+  }
+}
+
+.section-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .section-subtitle {
+    font-size: 0.925rem;
+    line-height: 1.5;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s ease-out forwards;
+}
