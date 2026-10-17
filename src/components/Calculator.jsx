@@ -262,7 +262,7 @@ export default function Calculator({ navigateToPage, currentLang }) {
               </button>
 
               <a
-                href={`https://wa.me/916362324998?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20used%20your%20calculator%20for%20${acres}%20Acres%20(${totalSaplings}%20saplings%20for%20${selectedDistrict}).%20Please%20send%20bulk%20quote%20and%20truck%20delivery%20details.`}
+                href={`https://wa.me/919606841193?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20used%20your%20calculator%20for%20${acres}%20Acres%20(${totalSaplings}%20saplings%20for%20${selectedDistrict}).%20Please%20send%20bulk%20quote%20and%20truck%20delivery%20details.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline w-full"

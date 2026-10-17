@@ -64,7 +64,7 @@ export default function Contact({ currentLang }) {
               </div>
               <div>
                 <strong>{currentLang === 'kn' ? 'ನೇರ ಕರೆ / ಸಹಾಯವಾಣಿ' : 'Direct Phone / Call'}</strong>
-                <p>+91 63623 24998</p>
+                <p>+91 96068 41193 / +91 78921 68121</p>
               </div>
             </div>
 
@@ -93,7 +93,7 @@ export default function Contact({ currentLang }) {
               <h4>{currentLang === 'kn' ? 'ತಕ್ಷಣ ಸಸಿ ಲಭ್ಯತೆ ತಿಳಿಯಬೇಕೆ?' : 'Need Immediate Sapling Availability?'}</h4>
               <p>{currentLang === 'kn' ? 'ತಾಯಿ ಮರಗಳ ವೀಡಿಯೋ ತಪಾಸಣೆ ಮತ್ತು ದರಪಟ್ಟಿಗೆ ನಮ್ಮ ಹಿರಿಯ ತೋಟಗಾರಿಕಾ ತಜ್ಞರೊಂದಿಗೆ ನೇರವಾಗಿ ಚಾಟ್ ಮಾಡಿ.' : 'Chat directly with our senior horticulturist on WhatsApp for video inspection of mother palms.'}</p>
               <a
-                href="https://wa.me/916362324998?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20visit%20the%20nursery%20and%20order%20saplings."
+                href="https://wa.me/919606841193?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20visit%20the%20nursery%20and%20order%20saplings."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-gold w-full"
@@ -143,7 +143,7 @@ export default function Contact({ currentLang }) {
                     <input
                       type="tel"
                       required
-                      placeholder="e.g. 6362324998"
+                      placeholder="e.g. 9606841193"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     />

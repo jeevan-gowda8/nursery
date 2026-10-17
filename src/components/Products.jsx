@@ -73,7 +73,7 @@ export default function Products({ currentLang }) {
     const message = encodeURIComponent(
       `Hello Sri Areca Haven Nursery, I want to inquire about ordering ${qty} saplings of ${productName} (${stageName}) at ₹${unitPrice}/pc (Est Total: ₹${total.toLocaleString('en-IN')}). Please confirm delivery & booking.`
     );
-    window.open(`https://wa.me/916362324998?text=${message}`, '_blank');
+    window.open(`https://wa.me/919606841193?text=${message}`, '_blank');
   };
 
   return (

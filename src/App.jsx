@@ -159,7 +159,7 @@ export default function App() {
 
       {/* Floating Instant WhatsApp Button for Farmers */}
       <a
-        href="https://wa.me/916362324998?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20inquire%20about%20Arecanut%20saplings."
+        href="https://wa.me/919606841193?text=Hello%20Sri%20Areca%20Haven%20Nursery,%20I%20want%20to%20inquire%20about%20Arecanut%20saplings."
         target="_blank"
         rel="noopener noreferrer"
         className="floating-whatsapp-btn"

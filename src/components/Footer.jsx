@@ -67,7 +67,7 @@ export default function Footer({ navigateToPage, currentLang }) {
             </div>
             <div className="f-contact-item">
               <Phone size={15} className="text-green" />
-              <span>+91 63623 24998</span>
+              <span>+91 96068 41193 / +91 78921 68121</span>
             </div>
             <div className="f-contact-item">
               <Mail size={15} className="text-green" />

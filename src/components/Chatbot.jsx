@@ -30,7 +30,7 @@ function ProductWidget({ productId, chatLang }) {
     const msg = encodeURIComponent(
       `Hello Sri Areca Haven Nursery, I want to order ${qty} saplings of ${productName} (${stageLabels[stage]}) at ₹${price}/pc (Est. Total: ₹${total.toLocaleString('en-IN')}). Please confirm booking.`
     );
-    window.open(`https://wa.me/916362324998?text=${msg}`, '_blank');
+    window.open(`https://wa.me/919606841193?text=${msg}`, '_blank');
   };
 
   return (
@@ -442,7 +442,7 @@ export default function Chatbot({ currentLang }) {
       if (hasEnContact) {
         return {
           text: "📞 **Contact Details:**\n\n" +
-                "• **Direct Call / Inquiry:** +91 63623 24998\n" +
+                "• **Direct Call / Inquiry:** +91 96068 41193 / +91 78921 68121\n" +
                 "• **WhatsApp Support:** Send a message directly using the green WhatsApp helper on the bottom left of the site.\n" +
                 "• **Location:** Thippasandra, Magadi Taluk, Ramanagara, Karnataka.\n\n" +
                 "Feel free to call us for direct bookings, booking discounts on bulk orders (>1,000 saplings), or farm visit planning."
@@ -624,7 +624,7 @@ export default function Chatbot({ currentLang }) {
       if (hasKnContact) {
         return {
           text: "📞 **ಸಂಪರ್ಕ ಮಾಹಿತಿ:**\n\n" +
-                "• **ನೇರ ಕರೆ / ವಿಚಾರಣೆ:** +91 63623 24998\n" +
+                "• **ನೇರ ಕರೆ / ವಿಚಾರಣೆ:** +91 96068 41193 / +91 78921 68121\n" +
                 "• **ವಾಟ್ಸಾಪ್ ಸಹಾಯ:** ವೆಬ್‌ಸೈಟ್‌ನ ಎಡಭಾಗದಲ್ಲಿರುವ ವಾಟ್ಸಾಪ್ ಬಟನ್ ಒತ್ತಿ ನೇರವಾಗಿ ಚಾಟ್ ಮಾಡಿ.\n" +
                 "• **ವಿಳಾಸ:** ತಿಪ್ಪಸಂದ್ರ, ಮಾಗಡಿ ತಾಲೂಕು, ರಾಮನಗರ ಜಿಲ್ಲೆ.\n\n" +
                 "ಹೆಚ್ಚಿನ ಪ್ರಮಾಣದ ಸಸಿಗಳ ಖರೀದಿ (>1,000 ಗಿಡಗಳು) ಮತ್ತು ಬುಕಿಂಗ್ ರಿಯಾಯಿತಿಗಳಿಗಾಗಿ ನೇರವಾಗಿ ನಮಗೆ ಕರೆ ಮಾಡಿ."

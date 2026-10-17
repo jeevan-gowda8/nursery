@@ -1,6 +1,6 @@
 # 🌱 Sri Areca Haven Nursery (ಶ್ರೀ ಅಡಿಕೆ ಹ್ಯಾವನ್ ನರ್ಸರಿ)
 
-> **Govt. Accredited Elite Mother Palm Arecanut Nursery** | Thippasandra, Magadi Taluk, Ramanagara District, Karnataka - 562131 (Govt. Reg. License No: `KAE-2001-NUR-884` | 📞 +91 63623 24998)
+> **Govt. Accredited Elite Mother Palm Arecanut Nursery** | Thippasandra, Magadi Taluk, Ramanagara District, Karnataka - 562131 (Govt. Reg. License No: `KAE-2001-NUR-884` | 📞 +91 96068 41193 / +91 78921 68121)
 
 A modern, photorealistic, and mobile-responsive web application designed for a certified **Arecanut (Adike / Betel Nut) Plant Nursery**. Built with a botanical light aesthetic, full bilingual support (**English & Kannada**), dynamic quotation inquiry basket, farm profitability estimator, and instant WhatsApp integration.
 
@@ -151,7 +151,7 @@ The production bundle will be generated in the `dist/` directory.
 ## 📄 License & Contact
 
 - **Nursery Location**: Thippasandra, Magadi Taluk, Ramanagara District, Karnataka - 562131
-- **Phone**: +91 63623 24998
+- **Phone**: +91 96068 41193 / +91 78921 68121
 - **Email**: [Shreyasshetty4693@gmail.com](mailto:Shreyasshetty4693@gmail.com)
 - **Govt. Reg. License No**: `KAE-2001-NUR-884`
 
